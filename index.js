@@ -52,6 +52,8 @@ app.use(
         path: [
             { url: "/users/login", methods: ["POST"] },
             { url: "/users/register", methods: ["POST"] },
+            { url: "/users/otpLogin", methods: ["POST"] },
+            { url: "/users/verifyOTP", methods: ["POST"] }
         ],
     })
 );
@@ -72,5 +74,5 @@ app.use(erros.errorHandler);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, function () {
-    console.log("Ready to Go");
+    console.log(`Ok.. http://localhost:${PORT}`);
 });

@@ -36,3 +36,26 @@ exports.userProfile = (req, res, next) => {
     return res.status(200).json({ message: "Authorized User!" });
 }
 
+exports.otpLogin = (req, res, next) => {
+    userService.createOtp(req.body, (error, results) => {
+        if(error) {
+            return next(error);
+        }
+        return res.status(200).send({
+            message: "Success",
+            data: results
+        });
+    });
+}
+
+exports.verifyOTP = async (req, res, next) => {
+    await userService.verifyOTP(req.body, (error, results) => {
+        if(error) {
+            return next(error);
+        }
+        return res.status(200).send({
+            message: "Success",
+            data: results
+        });
+    });
+}
