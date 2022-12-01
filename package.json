@@ -1,7 +1,7 @@
 {
   "name": "jtwmongose",
   "version": "1.0.0",
-  "description": "JTW with Moongo",
+  "description": "JTW with Moongo and OTP",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,7 +19,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.3",
     "mongoose-unique-validator": "^3.1.0",
-    "nodemon": "^2.0.20",
     "otp-generator": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
