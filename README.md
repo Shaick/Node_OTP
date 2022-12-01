@@ -1,4 +1,4 @@
-# jtwMongose0
+# jtwMongoseOTP
  Api JTW Mongodb, Criação e verificação de código OTP
 
     Dependencias: bcryptjs, body-parser, crypto, dotenv, express, express-unless, jsonwebtoken,
